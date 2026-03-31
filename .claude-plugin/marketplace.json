@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "pluto-skills",
-      "source": ".",
+      "source": "./",
       "description": "Pluto 的个人 Skills、Commands 和 Agents 合集，包含模块文档生成等实用工具",
       "version": "0.1.0",
       "author": {
