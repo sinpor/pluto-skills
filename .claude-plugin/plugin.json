@@ -1,0 +1,12 @@
+{
+  "name": "pluto-skills",
+  "version": "0.1.0",
+  "description": "Pluto's personal Claude Code skills and commands",
+  "author": {
+    "name": "Pluto"
+  },
+  "license": "MIT",
+  "skills": "./skills/",
+  "commands": "./commands/",
+  "agents": "./agents/"
+}
