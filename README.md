@@ -150,15 +150,21 @@ maxTurns: 20
 
 ## 如何使用这个插件
 
-### 本地开发
+### 方式一：通过 Marketplace 安装（推荐）
+
+在 Claude Code 中执行：
 
 ```bash
-claude --plugin-dir /path/to/pluto-skills "your prompt"
+# 1. 添加 marketplace
+/plugin marketplace add sinpor/pluto-skills
+
+# 2. 安装插件
+/plugin install pluto-skills@pluto-skills
 ```
 
-### 安装到 Claude Code
+### 方式二：通过项目配置安装
 
-在 `~/.claude/settings.json` 中添加：
+在目标项目的 `.claude/settings.json` 中添加：
 
 ```json
 {
@@ -166,15 +172,18 @@ claude --plugin-dir /path/to/pluto-skills "your prompt"
     "pluto-skills": {
       "source": {
         "source": "github",
-        "repo": "your-github-username/pluto-skills"
+        "repo": "sinpor/pluto-skills"
       }
     }
+  },
+  "enabledPlugins": {
+    "pluto-skills@pluto-skills": true
   }
 }
 ```
 
-然后：
+### 方式三：本地开发调试
 
 ```bash
-claude plugin install pluto-skills@pluto-skills
+claude --plugin-dir /path/to/pluto-skills "your prompt"
 ```
